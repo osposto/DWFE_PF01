@@ -4,7 +4,7 @@
 Este proyecto es un Trabajo Práctico (TP) correspondiente a la Práctica Formativa Obligatoria 1. 
 Consiste en el desarrollo de una Landing Page para un Portafolio Personal, construida exclusivamente con HTML y CSS, aplicando buenas prácticas de maquetación, semántica y diseño responsivo.
 
-**URL del proyecto publicado en GitHub Pages:** [Inserte su link aquí]
+**URL del proyecto publicado en GitHub Pages: https://osposto.github.io/DWFE_PF01/
 
 ---
 
