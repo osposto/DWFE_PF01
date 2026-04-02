@@ -1,20 +1,22 @@
-# DWFE_PF01# Práctica Formativa Obligatoria 1 - Portafolio Personal
+Práctica Formativa Obligatoria 1 - Portafolio Personal
 
-## Descripción del Proyecto
+Descripción del Proyecto
+
 Este proyecto es un Trabajo Práctico (TP) correspondiente a la Práctica Formativa Obligatoria 1. 
 Consiste en el desarrollo de una Landing Page para un Portafolio Personal, construida exclusivamente con HTML y CSS, aplicando buenas prácticas de maquetación, semántica y diseño responsivo.
 
-**URL del proyecto publicado en GitHub Pages: https://osposto.github.io/DWFE_PF01/
+URL del proyecto publicado en GitHub Pages: https://osposto.github.io/DWFE_PF01/
+URL del proyecto publicado en Vercel:https://dwfe-pf-01.vercel.app/
 
----
 
-## Checklist - Práctica Formativa Obligatoria 1
 
-### Estructura del Proyecto
-- [☑️ ] Archivo "index.html" ubicado en la raíz.
-- [ ] Carpeta "css" que contenga el archivo "styles.css".
-- [ ] (Opcional) Carpeta "img" para recursos gráficos.
-- [ ] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.
+Checklist - Práctica Formativa Obligatoria 1
+
+Estructura del Proyecto
+- [X] Archivo "index.html" ubicado en la raíz.
+- [X] Carpeta "css" que contenga el archivo "styles.css".
+- [X] (Opcional) Carpeta "img" para recursos gráficos.
+- [X] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.
 
 ### Repositorio y Publicación
 - [ ] Repositorio en GitHub creado.
@@ -51,14 +53,14 @@ Consiste en el desarrollo de una Landing Page para un Portafolio Personal, const
 **Layout y Organización:**
 - [ ] Se ha organizado el layout (especialmente en la sección "tarjetas") utilizando Flexbox o Grid.
 - [ ] Redacta: ¿Qué ventajas encontraste al utilizar Flexbox o Grid en tu proyecto?
-  > **Respuesta:** [Redacte aquí su justificación técnica sobre el uso de Flexbox o Grid]
+  > **Respuesta:** - [Redacte aquí su justificación técnica sobre el uso de Flexbox o Grid]
 
 **Estilización de Componentes:**
 - [ ] Se han personalizado los estilos de tablas, botones, enlaces y formularios.
 - [ ] Se han ajustado las dimensiones de imágenes y contenedores utilizando unidades relativas (%, rem, vh).
 - [ ] Se ha implementado al menos una animación o transición (por ejemplo, efecto hover en tarjetas o botones).
 - [ ] Redacta: ¿Qué animación o transición implementaste y por qué consideraste que era adecuada para tu proyecto?
-  > **Respuesta:** [Redacte aquí su justificación sobre la animación/transición elegida]
+  > **Respuesta:** - [Redacte aquí su justificación sobre la animación/transición elegida]
 
 ### Consideraciones Adicionales
 - [ ] El diseño es responsivo y se visualiza correctamente en distintos dispositivos.
