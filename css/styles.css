@@ -1,0 +1,226 @@
+/* =========================================
+   Variables de Color (Optimizadas para Contraste WCAG)
+   ========================================= */
+:root {
+    --color-fondo: #f4f4f9;
+    --color-texto: #1a1a1a;
+    --color-primario: #0056b3; /* Azul con excelente legibilidad */
+    --color-secundario: #e0e0e0;
+    --color-blanco: #ffffff;
+    /* Tipografía importada de Google Fonts */
+    --fuente-principal: 'Roboto', sans-serif;
+}
+
+/* =========================================
+   Reset y Configuración Base (Buenas prácticas SEO/UX)
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* =========================================
+   Encabezado y Navegación
+   ========================================= */
+header {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+nav {
+    background-color: #333333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    flex-wrap: wrap; /* Permite que los enlaces bajen de línea en celulares */
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Animación/Transición exigida en enlaces */
+}
+
+/* =========================================
+   Estructura Principal
+   ========================================= */
+main {
+    padding: 2rem 5%; /* Uso de porcentajes para responsividad */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    border-bottom: 2px solid var(--color-primario);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* =========================================
+   Sección: Sobre mí
+   ========================================= */
+#sobre-mi img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+
+/* =========================================
+   Sección: Tarjetas de Proyectos (CSS Grid)
+   ========================================= */
+.contenedor-tarjetas {
+    display: grid;
+    /* Grid responsivo sin necesidad de Media Queries complejos */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta {
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-secundario);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    /* Transición exigida para el efecto hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* =========================================
+   Sección: Películas Favoritas (Flexbox)
+   ========================================= */
+.contenedor-peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.pelicula {
+    flex: 1 1 calc(33.333% - 2rem);
+    min-width: 250px;
+    background-color: var(--color-blanco);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.pelicula img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+/* =========================================
+   Formulario de Contacto
+   ========================================= */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input {
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--fuente-principal);
+}
+
+button {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003d82; /* Cambio de color al pasar el mouse */
+}
+
+/* =========================================
+   Pie de Página
+   ========================================= */
+footer {
+    background-color: #333333;
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 2rem;
+}
+
+.redes-sociales {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.redes-sociales a {
+    color: var(--color-primario); /* Usando el azul principal para resaltar */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
