@@ -246,7 +246,7 @@ button:hover {
    ========================================= */
 footer {
     background-color: #333333;
-    color: var(--color-blanco);
+    color: var(--color-texto);
     text-align: center;
     padding: 2rem;
 }
@@ -267,7 +267,9 @@ footer {
 
 .redes-sociales a:hover {
     text-decoration: underline;
-}/* =========================================
+}
+
+/* =========================================
    Ajustes de Diseño Visual (Quick Wins)
    ========================================= */
 
@@ -315,6 +317,41 @@ p {
 #popup-exito.mostrar {
     visibility: visible;
     opacity: 1;
+}
+
+/* =========================================
+   Botón Flotante (Volver Arriba)
+   ========================================= */
+#btn-volver-arriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px; /* Lo ubicamos en la esquina inferior derecha */
+    background-color: var(--color-primario); /* Usa su variable de color */
+    color: var(--color-fondo); /* Contraste con el fondo */
+    border: none;
+    border-radius: 50%; /* Lo hace un círculo perfecto */
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999; /* Se asegura de que no quede tapado por otros elementos */
+    
+    /* Estado inicial oculto */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+}
+
+/* Un pequeño efecto de escala al pasar el mouse */
+#btn-volver-arriba:hover {
+    transform: scale(1.1);
+}
+
+/* Clase que JavaScript activará para hacerlo visible */
+#btn-volver-arriba.mostrar {
+    opacity: 1;
+    visibility: visible;
 }
 
 

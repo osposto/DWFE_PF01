@@ -1,176 +1,272 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="description" content="Portafolio personal de Orlando, desarrollador web en Argentina. Proyectos, habilidades y contacto.">
-    <meta name="author" content="Orlando">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Portafolio personal de Orlando, desarrollador web en Argentina. Proyectos, habilidades y contacto."
+    />
+    <meta name="author" content="Orlando" />
+
     <title>Mi Portafolio Personal | Orlando</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/styles.css">
-
-    </head>
-<body>
-
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Orlando - Desarrollador Web</h1>
+      <h1>Orlando - Desarrollador Web</h1>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#peliculas">Películas</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#peliculas">Películas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
 
     <main>
-        
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <img src="img/Foto de perfil Linkedin.png" alt="Foto de perfil de Orlando">
-            <p>¡Hola! Soy Orlando, un apasionado por la tecnología y el desarrollo de software nacido en Argentina. 
-                Me interesa crear soluciones eficientes y escalables. Mi misión como desarrollador es aplicar buenas prácticas, 
-                como el diseño responsivo y la optimización SEO, para construir experiencias web de alta calidad.
+      <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <img
+          src="img/Foto de perfil Linkedin.png"
+          alt="Foto de perfil de Orlando"
+        />
+        <p>
+          ¡Hola! Soy Orlando, un apasionado por la tecnología y el desarrollo de
+          software nacido en Argentina. Me interesa crear soluciones eficientes
+          y escalables. Mi misión como desarrollador es aplicar buenas
+          prácticas, como el diseño responsivo y la optimización SEO, para
+          construir experiencias web de alta calidad.
+        </p>
+        <p>
+          Por otra parte, desarrollo sistemas embebidos en C, C++, para
+          aplicaciones de todo tipo. En este momento me encuentro desarrollando
+          un sistema de control de bombeo, para la administración de una bomba y
+          una llave de paso eléctrica, para el llenado de un tanque elevado, que
+          a su vez tiene un sensor de nivel interno, del tipo ultrasónico,
+          interconectados por wifi, y Wifi Direct. Otro de los proyectos que
+          estoy terminando es un reemplazo de termostatos mecánicos por
+          electrónicos, también manejados por wifi, para heladeras antiguas.
+        </p>
+      </section>
+
+      <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="contenedor-tarjetas">
+          <article class="tarjeta">
+            <img
+              src="img/con_valv_bomba.webp"
+              alt="Captura de pantalla de controlador de bomba de agua"
+            />
+            <h3>Proyecto 1</h3>
+            <p>
+              Controlador de válvula y bomba impulsora. Comando Wifi.
+              Interconecta con un sensor conectado por WiFi Direct instalado en
+              el tanque.
             </p>
-            <p>Por otra parte, desarrollo sistemas embebidos en C, C++, para aplicaciones de todo tipo. 
-                    En este momento me encuentro desarrollando un sistema de control de bombeo, para la administración de 
-                    una bomba y una llave de paso eléctrica, para el llenado de un tanque elevado, que a su vez tiene un sensor de nivel interno, 
-                    del tipo ultrasónico, interconectados por wifi, y Wifi Direct.
-                    Otro de los proyectos que estoy terminando es un reemplazo de termostatos mecánicos por electrónicos, también manejados por wifi, 
-                    para heladeras antiguas.
+          </article>
+          <article class="tarjeta">
+            <img
+              src="img/ref_infrarrojo.webp"
+              alt="Captura de Reflector Infrarrojo"
+            />
+            <h3>Proyecto 2</h3>
+            <p>
+              Es un reflector infrarrojo con longitud de onda 940&mu;m. El
+              objetivo el miso es apoyar el funcionamiento de cámaras de
+              seguridad. Se activa con la falta de diurna.
             </p>
-        </section>
+          </article>
+        </div>
+      </section>
 
-        <section id="proyectos">
-            <h2>Mis Proyectos</h2>
-            <div class="contenedor-tarjetas">
-                <article class="tarjeta">
-                    <img src="img/con_valv_bomba.webp" alt="Captura de pantalla de controlador de bomba de agua">
-                    <h3>Proyecto 1</h3>
-                    <p>Controlador de válvula y bomba impulsora. Comando Wifi. Interconecta con un sensor conectado por WiFi Direct instalado en el tanque.</p>
-                </article>
-                <article class="tarjeta">
-                    <img src="img/ref_infrarrojo.webp" alt="Captura de Reflector Infrarrojo">
-                    <h3>Proyecto 2</h3>
-                    <p>Es un reflector infrarrojo con longitud de onda 940&mu;m. El objetivo el miso es apoyar el funcionamiento de cámaras de seguridad.
-                    Se activa con la falta de diurna.
-                    </p>
-                </article>
-            </div>
-        </section>
+      <section id="habilidades">
+        <h2>Mis Habilidades y Tecnologías</h2>
+        <ul>
+          <li>
+            <strong>Domino:</strong> C/C++, Python, Linux (Ubuntu), HTML, CSS,
+            JavaScript, SQL.
+          </li>
+          <li><strong>Deseo aprender:</strong> React, Node.js avanzados.</li>
+          <li>
+            <strong>Hobbies:</strong> Herrería y Electrónica DIY, jardinería,
+            panadería.
+          </li>
+        </ul>
+      </section>
 
-        <section id="habilidades">
-            <h2>Mis Habilidades y Tecnologías</h2>
-            <ul>
-                <li><strong>Domino:</strong> C/C++, Python, Linux (Ubuntu), HTML, CSS, JavaScript, SQL.</li>
-                <li><strong>Deseo aprender:</strong> React, Node.js avanzados.</li>
-                <li><strong>Hobbies:</strong> Herrería y Electrónica DIY, jardinería, panadería.</li>
-            </ul>
-        </section>
+      <section id="peliculas">
+        <h2>Mis 7 Películas Favoritas (clásicas)</h2>
+        <div class="contenedor-peliculas">
+          <article class="pelicula">
+            <h3>1. Casino Royale</h3>
+            <img
+              src="img/casino_royale.webp"
+              alt="Póster de la película Casino Royale"
+            />
+            <p>
+              El reinicio de la franquicia de James Bond, con una trama intensa
+              y excelente acción.
+            </p>
+          </article>
+          <article class="pelicula">
+            <h3>2. El Padrino</h3>
+            <img
+              src="img/el_padrino.webp"
+              alt="Póster de la película El Padrino"
+            />
+            <p>Una obra maestra del cine que define el género de gánsteres.</p>
+          </article>
+          <article class="pelicula">
+            <h3>3. Matrix</h3>
+            <img src="img/matrix.webp" alt="Póster de la película Matrix" />
+            <p>
+              Revolucionaria en sus efectos visuales y en su planteo filosófico
+              sobre la realidad.
+            </p>
+          </article>
+          <article class="pelicula">
+            <h3>4. Alien</h3>
+            <img src="img/alien.webp" alt="Póster de la película Alien" />
+            <p>Ciencia ficción y terror, una combinación excelente.</p>
+          </article>
+          <article class="pelicula">
+            <h3>5. Apocalypse Now</h3>
+            <img
+              src="img/apocalypse_now.webp"
+              alt="Póster de la película Apocalypse Now"
+            />
+            <p>
+              Una visión distinta de la guerra, con sus vicios, corrupción y
+              fanatismo
+            </p>
+          </article>
+          <article class="pelicula">
+            <h3>3. Termminator</h3>
+            <img
+              src="img/terminator.webp"
+              alt="Póster de la película Terminator"
+            />
+            <p>Un thriller de robótica, ciencia ficción y violencia.</p>
+          </article>
+          <article class="pelicula">
+            <h3>3. Matrix</h3>
+            <img
+              src="img/silencio_inocentes.webp"
+              alt="Póster de la película El silencio de los Inocentes"
+            />
+            <p>
+              Terror psicológico, enfermedades mentales, policías y un
+              psiquiatra caníbal. Que más se puede pedir?
+            </p>
+          </article>
+        </div>
+      </section>
 
-        <section id="peliculas">
-            <h2>Mis 7 Películas Favoritas (clásicas)</h2>
-            <div class="contenedor-peliculas">
-                <article class="pelicula">
-                    <h3>1. Casino Royale</h3>
-                    <img src="img/casino_royale.webp" alt="Póster de la película Casino Royale">
-                    <p>El reinicio de la franquicia de James Bond, con una trama intensa y excelente acción.</p>
-                </article>
-                <article class="pelicula">
-                    <h3>2. El Padrino</h3>
-                    <img src="img/el_padrino.webp" alt="Póster de la película El Padrino">
-                    <p>Una obra maestra del cine que define el género de gánsteres.</p>
-                </article>
-                <article class="pelicula">
-                    <h3>3. Matrix</h3>
-                    <img src="img/matrix.webp" alt="Póster de la película Matrix">
-                    <p>Revolucionaria en sus efectos visuales y en su planteo filosófico sobre la realidad.</p>
-                </article>
-                <article class="pelicula">
-                    <h3>4. Alien</h3>
-                    <img src="img/alien.webp" alt="Póster de la película Alien">
-                    <p>Ciencia ficción y terror, una combinación excelente.</p>
-                </article>
-                <article class="pelicula">
-                    <h3>5. Apocalypse Now</h3>
-                    <img src="img/apocalypse_now.webp" alt="Póster de la película Apocalypse Now">
-                    <p>Una visión distinta de la guerra, con sus vicios, corrupción y fanatismo</p>
-                </article>
-                <article class="pelicula">
-                    <h3>3. Termminator</h3>
-                    <img src="img/terminator.webp" alt="Póster de la película Terminator">
-                    <p>Un thriller de robótica, ciencia ficción y violencia.</p>
-                </article>
-                <article class="pelicula">
-                    <h3>3. Matrix</h3>
-                    <img src="img/silencio_inocentes.webp" alt="Póster de la película El silencio de los Inocentes">
-                    <p>Terror psicológico, enfermedades mentales, policías y un psiquiatra caníbal. Que más se puede pedir?</p>
-                </article>
-            </div>
-        </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formulario-contacto" action="#" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form id="formulario-contacto" action="#" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
 
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required />
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            placeholder="Escriba su mensaje aquí..."
+            required
+          ></textarea>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje aquí..." required></textarea>
-
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-        </section>
-
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Orlando. Todos los derechos reservados.</p>
-        <ul class="redes-sociales">
-            <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        </ul>
+      <p>&copy; 2026 Orlando. Todos los derechos reservados.</p>
+      <ul class="redes-sociales">
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </li>
+      </ul>
     </footer>
 
-<div id="popup-exito">¡Mensaje enviado correctamente!</div>
+    <div id="popup-exito">¡Mensaje enviado correctamente!</div>
+
+    <button
+      id="btn-volver-arriba"
+      aria-label="Volver al inicio de la página"
+      title="Volver al inicio"
+    >
+      &#8593;
+    </button>
 
     <script>
-        const formulario = document.getElementById('formulario-contacto');
-        const popup = document.getElementById('popup-exito');
+      const formulario = document.getElementById("formulario-contacto");
+      const popup = document.getElementById("popup-exito");
 
-        formulario.addEventListener('submit', function(evento) {
-            // 1. Evita que la página se recargue de golpe al presionar el botón
-            evento.preventDefault(); 
+      formulario.addEventListener("submit", function (evento) {
+        // 1. Evita que la página se recargue de golpe al presionar el botón
+        evento.preventDefault();
 
-            // 2. Muestra el cartelito agregando la clase CSS
-            popup.classList.add('mostrar'); 
+        // 2. Muestra el cartelito agregando la clase CSS
+        popup.classList.add("mostrar");
 
-            // 3. Espera 3 segundos (3000 milisegundos) y ejecuta el final
-            setTimeout(function() {
-                popup.classList.remove('mostrar'); // Oculta el cartel
-                formulario.reset(); // Limpia el texto que escribió el usuario
-                window.location.href = '#'; // Lleva la vista al inicio del sitio
-            }, 3000);
+        // 3. Espera 3 segundos (3000 milisegundos) y ejecuta el final
+        setTimeout(function () {
+          popup.classList.remove("mostrar"); // Oculta el cartel
+          formulario.reset(); // Limpia el texto que escribió el usuario
+          window.location.href = "#"; // Lleva la vista al inicio del sitio
+        }, 3000);
+      });
+
+      // Lógica para el botón "Volver arriba"
+      const btnVolverArriba = document.getElementById("btn-volver-arriba");
+
+      // Escucha el evento de desplazamiento (scroll)
+      window.addEventListener("scroll", function () {
+        // Si la pantalla baja más de 300 píxeles, aparece el botón
+        if (window.scrollY > 300) {
+          btnVolverArriba.classList.add("mostrar");
+        } else {
+          // Si vuelve muy arriba, se oculta
+          btnVolverArriba.classList.remove("mostrar");
+        }
+      });
+
+      // Escucha el clic en el botón
+      btnVolverArriba.addEventListener("click", function () {
+        // Sube al tope de la página con un desplazamiento suave
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
         });
+      });
     </script>
-
-</body>
+  </body>
 </html>
