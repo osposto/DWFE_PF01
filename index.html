@@ -34,7 +34,7 @@
         
         <section id="sobre-mi">
             <h2>Sobre mí</h2>
-            <img src="img/Foto de perfil Linkedin.png" alt="Foto de perfil de Orlando o avatar representativo">
+            <img src="img/Foto de perfil Linkedin.png" alt="Foto de perfil de Orlando">
             <p>¡Hola! Soy Orlando, un apasionado por la tecnología y el desarrollo de software nacido en Argentina. 
                 Me interesa crear soluciones eficientes y escalables. Mi misión como desarrollador es aplicar buenas prácticas, 
                 como el diseño responsivo y la optimización SEO, para construir experiencias web de alta calidad.
@@ -52,15 +52,17 @@
             <h2>Mis Proyectos</h2>
             <div class="contenedor-tarjetas">
                 <article class="tarjeta">
-                    <img src="img/con_valv_bomba.webp" alt="Captura de pantalla del Proyecto 1">
+                    <img src="img/con_valv_bomba.webp" alt="Captura de pantalla de controlador de bomba de agua">
                     <h3>Proyecto 1</h3>
-                    <p>Controlador de válvula y bomba impulsora. Comando Wifi.</p>
+                    <p>Controlador de válvula y bomba impulsora. Comando Wifi. Interconecta con un sensor conectado por WiFi Direct instalado en el tanque.</p>
                 </article>
-                <!--<article class="tarjeta">
-                    <img src="img/proyecto2.jpg" alt="Captura de pantalla del Proyecto 2">
+                <article class="tarjeta">
+                    <img src="img/ref_infrarrojo.webp" alt="Captura de Reflector Infrarrojo">
                     <h3>Proyecto 2</h3>
-                    <p>Breve descripción del segundo proyecto desarrollado.</p>
-                </article>-->
+                    <p>Es un reflector infrarrojo con longitud de onda 940&mu;m. El objetivo el miso es apoyar el funcionamiento de cámaras de seguridad.
+                    Se activa con la falta de diurna.
+                    </p>
+                </article>
             </div>
         </section>
 
@@ -116,7 +118,7 @@
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <form action="#" method="POST">
+            <form id="formulario-contacto" action="#" method="POST">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -128,6 +130,9 @@
 
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje aquí..." required></textarea>
 
                 <button type="submit">Enviar Mensaje</button>
             </form>
@@ -142,6 +147,28 @@
             <li><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
     </footer>
+
+<div id="popup-exito">¡Mensaje enviado correctamente!</div>
+
+    <script>
+        const formulario = document.getElementById('formulario-contacto');
+        const popup = document.getElementById('popup-exito');
+
+        formulario.addEventListener('submit', function(evento) {
+            // 1. Evita que la página se recargue de golpe al presionar el botón
+            evento.preventDefault(); 
+
+            // 2. Muestra el cartelito agregando la clase CSS
+            popup.classList.add('mostrar'); 
+
+            // 3. Espera 3 segundos (3000 milisegundos) y ejecuta el final
+            setTimeout(function() {
+                popup.classList.remove('mostrar'); // Oculta el cartel
+                formulario.reset(); // Limpia el texto que escribió el usuario
+                window.location.href = '#'; // Lleva la vista al inicio del sitio
+            }, 3000);
+        });
+    </script>
 
 </body>
 </html>

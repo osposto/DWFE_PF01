@@ -2,11 +2,13 @@
    Variables de Color (Optimizadas para Contraste WCAG)
    ========================================= */
 :root {
-    --color-fondo: #f4f4f9;
-    --color-texto: #1a1a1a;
-    --color-primario: #0056b3; /* Azul con excelente legibilidad */
-    --color-secundario: #e0e0e0;
-    --color-blanco: #ffffff;
+
+
+    --color-fondo: #121212; /* Un gris casi negro, estándar en UI moderna */
+    --color-texto: #e0e0e0; /* Un gris claro para el texto, evitando el blanco puro que encandila */
+    --color-primario: #4dabf7; /* Un azul más claro y vibrante para resaltar sobre la oscuridad */
+    --color-secundario: #333333; /* Para los bordes sutiles */
+    --color-blanco: #1e1e1e; /* Se usa como fondo de las tarjetas para despegarlas del fondo general */
     /* Tipografía importada de Google Fonts */
     --fuente-principal: 'Roboto', sans-serif;
 }
@@ -113,6 +115,15 @@ h2 {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     /* Transición exigida para el efecto hover */
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+}
+
+.tarjeta p {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: all 0.4s ease-in-out;
 }
 
 .tarjeta:hover {
@@ -120,11 +131,22 @@ h2 {
     box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
 
+.tarjeta:hover p {
+    max-height: 150px; /* Una altura suficiente para que entre el texto */
+    opacity: 1;
+    margin-top: 1rem; /* Restauramos la separación visual con la imagen */
+}
+
 .tarjeta img {
     width: 100%;
     height: auto;
     border-radius: 4px;
     margin-bottom: 1rem;
+    transition: transform 0.4s ease;
+}
+
+.tarjeta:hover img {
+    transform: scale(1.03); /* Acerca la imagen un 3% */
 }
 
 /* =========================================
@@ -145,6 +167,7 @@ h2 {
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    cursor: pointer; /* Indica que la tarjeta es interactiva cambiando el cursor*/
 }
 
 .pelicula img {
@@ -153,7 +176,27 @@ h2 {
     height: auto;
     margin: 1rem 0;
     border-radius: 4px;
+    transition: transform 0.4s ease;
 }
+
+.pelicula p {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: all 0.4s ease-in-out; /* Define la suavidad y velocidad de la animación */
+}
+
+.pelicula:hover p {
+    max-height: 150px; /* Una altura suficiente para que entre el texto */
+    opacity: 1;
+    margin-top: 1rem; /* Restauramos la separación visual con la imagen */
+}
+
+.pelicula:hover img {
+    transform: scale(1.03); /* Acerca la imagen un 3% */
+}
+
 
 /* =========================================
    Formulario de Contacto
@@ -174,7 +217,7 @@ form label {
     font-weight: bold;
 }
 
-form input {
+form , textarea {
     padding: 0.8rem;
     margin-bottom: 1.5rem;
     border: 1px solid #ccc;
@@ -244,6 +287,36 @@ p {
 .tarjeta:hover {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
+
+/* =========================================
+   Aviso de envío correcto
+   ========================================= */
+
+#popup-exito {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #4caf50; /* Un verde clásico de "operación exitosa" */
+    color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed; /* Lo despega del flujo normal y lo deja flotando */
+    z-index: 1000; /* Asegura que esté por encima de cualquier otro elemento */
+    left: 50%;
+    bottom: 30px; /* A 30px del borde inferior de la pantalla */
+    transform: translateX(-50%); /* Lo centra perfectamente en el eje horizontal */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+}
+
+/* Esta es la clase que JavaScript activa y desactiva */
+#popup-exito.mostrar {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /* =========================================
    Responsividad (Media Queries)
