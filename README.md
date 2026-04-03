@@ -29,6 +29,7 @@ Estructura del Proyecto
 - [ ] La tipografía importada se aplica en el sitio.
 - [ ] Redacta brevemente tu decisión: ¿Por qué elegiste esa fuente?
   > Nos resulto adecuada pues al ser sans serif, permite una mejor legibilidad, y por otra parte tiene muchas posibilidades de configuración.
+  >Consideré que el estilo es coincidente con mis gustos y con la temática considerada, aparte de estar disponible con mucha facilidad, y tener también reemplazos fáciles de asociar.
 
 ### HTML
 - [ ] El documento inicia con la declaración DOCTYPE y usa el atributo lang="es".

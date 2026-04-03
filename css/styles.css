@@ -97,6 +97,7 @@ h2 {
 /* =========================================
    Sección: Tarjetas de Proyectos (CSS Grid)
    ========================================= */
+
 .contenedor-tarjetas {
     display: grid;
     /* Grid responsivo sin necesidad de Media Queries complejos */
@@ -223,4 +224,62 @@ footer {
 
 .redes-sociales a:hover {
     text-decoration: underline;
+}/* =========================================
+   Ajustes de Diseño Visual (Quick Wins)
+   ========================================= */
+
+/* Damos más 'aire' al texto general para mejorar la lectura y el SEO UX */
+p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Suavizamos las sombras y redondeamos los bordes para un aspecto más moderno */
+.tarjeta, .pelicula, form {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    border: none; 
+}
+
+.tarjeta:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   Responsividad (Media Queries)
+   ========================================= */
+
+/* Ajustes para pantallas de celulares (máximo 768px de ancho) */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 0;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    /* Apilamos los enlaces de navegación verticalmente para facilitar el toque */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.8rem 0;
+    }
+    
+    /* Forzamos a que las tarjetas ocupen el ancho completo en móviles */
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr; 
+    }
+    
+    /* Ajustes de espaciado en la sección principal */
+    main {
+        padding: 1.5rem 1rem;
+    }
+    
+    form {
+        padding: 1.5rem;
+    }
 }
