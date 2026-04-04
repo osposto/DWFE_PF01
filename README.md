@@ -67,3 +67,5 @@ Estructura del Proyecto
 - [X] El diseño es responsivo y se visualiza correctamente en distintos dispositivos.
 - [X] Se aplicaron buenas prácticas de accesibilidad (por ejemplo, uso adecuado de atributos alt en las imágenes).
 - [X] Se añadieron comentarios adicionales donde se describan decisiones de diseño o la lógica de implementación.
+  >Agregué algo de javascript para simplificar alguna de las funcionalidades de la página, como el botón de retorno al inicio, o el mensaje de "Mensaje enviado correctamente", en respuesta al boton enviar.
+  >Consideré esto como algo necesario a los fines de darle mayor fluidez a la página.
